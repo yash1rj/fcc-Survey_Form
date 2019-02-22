@@ -13,16 +13,19 @@
 		<body>
 			<div class="container">
 				<div class="row justify-content-center">
-					<h1>Web Developer Survey Form</h1>
+					<h1 id="title">Web Developer Survey Form</h1>
 				</div>
-				<form>
+				<div class="row justify-content-center">
+					<p id="description">This is a survey to research on trend of web devlopment.</p>
+				</div>
+				<form id="survey-form">
 					<div class="form-group row">
-						<label for="nameinput">Name:</label>
-						<input class="form-control" type="text" id="nameinput" placeholder="Full Name" />
+						<label for="name">Name:</label>
+						<input class="form-control" type="text" id="name" placeholder="Full Name" />
 					</div>
 					<div class="form-group row">
-						<label for="emailinput">Email:</label>
-						<input class="form-control" type="email" id="emailinput" placeholder="abc@xyz.com" aria-describedby="emailhelp" />
+						<label for="email	">Email:</label>
+						<input class="form-control" type="email" id="email" placeholder="abc@xyz.com" aria-describedby="emailhelp" />
 						<small id="emailhelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 					</div>
 					<div class="form-group row">
