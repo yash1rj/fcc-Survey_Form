@@ -1,185 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Yash Raj">
-        <meta name="description" content="A web developer survey form.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		
-        <title>Web-Dev Survey Form</title> 
-    </head>
-    <body>
-		<div class="container">
-			<div class="row justify-content-center">
-				<h1>Web Developer Survey Form</h1>
-			</div>
-			<form>
-				<div class="form-group">
-					<label for="nameinput">Name:</label>
-					<input class="form-control" type="text" id="nameinput" placeholder="Full Name" />
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="author" content="Yash Raj">
+			<meta name="description" content="A web developer survey form.">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+			
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			
+			<title>Web-Dev Survey Form</title> 
+		</head>
+		<body>
+			<div class="container">
+				<div class="row justify-content-center">
+					<h1>Web Developer Survey Form</h1>
 				</div>
-				<div class="form-group">
-					<label for="emailinput">Email:</label>
-					<input class="form-control" type="email" id="emailinput" placeholder="abc@xyz.com" aria-describedby="emailhelp" />
-					<small id="emailhelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				</div>
-				<div class="form-group">
-					<label for="nameinput">Age:</label>
-					<input class="form-control" type="number" id="ageinput" placeholder="Age" />
-				</div>
-				<div class="form-group">
-					<label for="currentroleselect">Which option best describes your current role ?</label>
-					<select class="form-control" id="currentroleselect" />
-						<option>--Please choose an option--</option>
-						<option>Student</option>
-						<option>Freelancer</option>
-						<option>Full time job</option>
-						<option>Full time learner</option>
-						<option>Prefer not to say</option>
-						<option>Other</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label class="form-check-label">How likely is that you would recommend Web Development to a friend?</label>
-					<div class="form-check">
-						<label for="def" class="form-check-label">
-							<input class="form-check-input" type="radio" name="wdrecgrp" id="def" value="definitely">
-							Definitely
-						</label>
+				<form>
+					<div class="form-group row">
+						<label for="nameinput">Name:</label>
+						<input class="form-control" type="text" id="nameinput" placeholder="Full Name" />
 					</div>
-					<div class="form-check">
-						<label for="maybe" class="form-check-label">
-							<input class="form-check-input" type="radio" name="wdrecgrp" id="maybe" value="maybe">
-							Maybe
-						</label>
+					<div class="form-group row">
+						<label for="emailinput">Email:</label>
+						<input class="form-control" type="email" id="emailinput" placeholder="abc@xyz.com" aria-describedby="emailhelp" />
+						<small id="emailhelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 					</div>
-					<div class="form-check">
-						<label for="notsure" class="form-check-label">
-							<input class="form-check-input" type="radio" name="wdrecgrp" id="notsure" value="notsure">
-							Not Sure
-						</label>
+					<div class="form-group row">
+						<label for="nameinput">Age:</label>
+						<input class="form-control" type="number" id="ageinput" placeholder="Age" />
 					</div>
-				</div>
-				<div class="form-group">
-					<label for="likeswdselect">What do you like most in Web Development ?</label>
-					<select class="form-control" id="likeswdselect" />
-						<option>--Please choose an option--</option>
-						<option>Challenges</option>
-						<option>Projects</option>
-						<option>Community</option>
-						<option>Open Source</option>
-						<option>Money</option>
-						<option>Other</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<div class="row">
-						<label class="form-check-label">Must Learn Technologies:</label>
+					<div class="form-group row">
+						<label for="currentroleselect">Which option best describes your current role ?</label>
+						<select class="form-control" id="currentroleselect" />
+							<option>--Please choose an option--</option>
+							<option>Student</option>
+							<option>Freelancer</option>
+							<option>Full time job</option>
+							<option>Full time learner</option>
+							<option>Prefer not to say</option>
+							<option>Other</option>
+						</select>
 					</div>
-					<div class="row">
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="html" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="html" value="html">
-								HTML
+					<div class="form-group">
+						<div class="row">
+							<label class="form-check-label">How likely is that you would recommend Web Development to a friend?</label>
+						</div>
+						<div class="radio">
+							<label for="def" class="form-check-label">
+								<input type="radio" name="wdrecgrp" id="def" value="definitely">
+								Definitely
 							</label>
 						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="css" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="css" value="css">
-								CSS
+						<div class="radio">
+							<label for="maybe" class="form-check-label">
+								<input type="radio" name="wdrecgrp" id="maybe" value="maybe">
+								Maybe
 							</label>
 						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="sass" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="sass" value="sass">
-								SASS
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="bootstrap" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="bootstrap" value="bootstrap">
-								BOOTSTRAP
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="javascript" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="javascript" value="javascript">
-								JAVASCRIPT
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="jquery" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="jquery" value="jquery">
-								JQUERY
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="mongo" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="mongo" value="mongo">
-								MONGODB
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="node" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="node" value="node">
-								NODE
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="express" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="express" value="express">
-								EXPRESS
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="angular" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="angular" value="angular">
-								ANGULAR
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="react" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="react" value="react">
-								REACT
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="python" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="python" value="python">
-								PYTHON
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="django" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="django" value="django">
-								DJANGO
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="sql" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="sql" value="sql">
-								SQL
-							</label>
-						</div>
-						<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<label for="postgresql" class="form-check-label">
-								<input class="form-check-input" type="checkbox" name="tech" id="postgresql" value="postgresql">
-								POSTGRESQL
+						<div class="radio">
+							<label for="notsure" class="form-check-label">
+								<input type="radio" name="wdrecgrp" id="notsure" value="notsure">
+								Not Sure
 							</label>
 						</div>
 					</div>
-				</div>
-				<div class="form-group">
-					<label for="suggestions">Any Comments or Suggestions ?</label>
-					<textarea class="form-control" id="suggestions" rows="3"></textarea>
-				</div>
-				<input class="btn btn-primary" type="submit" value="Submit">
-			</form>
-	</div>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
-</html>
+					<div class="form-group row">
+						<label for="likeswdselect">What do you like most in Web Development ?</label>
+						<select class="form-control" id="likeswdselect" />
+							<option>--Please choose an option--</option>
+							<option>Challenges</option>
+							<option>Projects</option>
+							<option>Community</option>
+							<option>Open Source</option>
+							<option>Money</option>
+							<option>Other</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<div class="row"><label>Must Learn Technologies:</label></div>
+						<div class="row">
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="html" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="html" value="html">
+									HTML
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="css" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="css" value="css">
+									CSS
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="sass" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="sass" value="sass">
+									SASS
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="bootstrap" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="bootstrap" value="bootstrap">
+									BOOTSTRAP
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="javascript" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="javascript" value="javascript">
+									JAVASCRIPT
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="jquery" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="jquery" value="jquery">
+									JQUERY
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="mongo" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="mongo" value="mongo">
+									MONGODB
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="node" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="node" value="node">
+									NODE
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="express" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="express" value="express">
+									EXPRESS
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="angular" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="angular" value="angular">
+									ANGULAR
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="react" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="react" value="react">
+									REACT
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="python" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="python" value="python">
+									PYTHON
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="django" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="django" value="django">
+									DJANGO
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="sql" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="sql" value="sql">
+									SQL
+								</label>
+							</div>
+							<div class="form-check col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label for="postgresql" class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="tech" id="postgresql" value="postgresql">
+									POSTGRESQL
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="suggestions">Any Comments or Suggestions ?</label>
+						<textarea class="form-control" id="suggestions" rows="3"></textarea>
+					</div>
+					<div class="text-center">
+						<input class="btn btn-primary" type="submit" value="Submit">
+					</div>
+				</form>
+				<br />	
+		</div>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		</body>
+	</html>
