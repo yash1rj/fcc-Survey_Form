@@ -18,7 +18,7 @@
 				<div class="row justify-content-center">
 					<p id="description">This is a survey to research on trend of web devlopment.</p>
 				</div>
-				<form id="survey-form">
+				<form id="survey-form" onSubmit="event.preventDefault()">
 					<div class="form-group row">
 						<label id="name-label" for="name">Name:</label>
 						<input class="form-control" type="text" id="name" placeholder="Full Name" required />
@@ -178,11 +178,17 @@
 						<label for="suggestions">Any Comments or Suggestions ?</label>
 						<textarea class="form-control" id="suggestions" rows="3"></textarea>
 					</div>
+					<div id="my-alert-box" class="alert alert-success collapse" role="alert">
+							<button type="button" class="close" data-toggle="collapse" href="#my-alert-box">
+								&times;
+							</button>
+							<p>Thank-You for your time.</p>
+						</div>
 					<div class="text-center">
-						<input id="submit" class="btn btn-primary" type="submit" value="Submit">
+						<input id="submit" class="btn btn-primary" type="submit" value="Submit" data-toggle="collapse" href="#my-alert-box" aria-expanded="false" aria-controls="my-alert-box">
 					</div>
 				</form>
-				<br />	
+				<br />
 		</div>
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
